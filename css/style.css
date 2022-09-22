@@ -30,18 +30,26 @@ main {
     gap: 1vw;
 }
 
+h1{
+    font-size: 3vh;
+}
+
+.colors{
+   
+}
+
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
     flex-basis: 40%;
-    position: relative;
+    
 }
 
 .robo {
     height: 110%;
     z-index: 1;
-    position: absolute;
+   
     left: -20%;
     top: -5%;
 }
@@ -248,6 +256,8 @@ main {
         text-align: center;
     }
 
+    
+
     .titulo {
         display: none;
     }
@@ -261,6 +271,8 @@ main {
         position: relative;
         left: 0;
         width: 40vh;
+        height: 80%;
+        margin-top: 2vh;
     }
 
     .estatistica {
@@ -270,6 +282,10 @@ main {
 
     .controle {
         width: 100%;
+    }
+
+    .controle-contador{
+        padding: 5;
     }
 
     .montador {

@@ -53,10 +53,10 @@ function manipulaDados(operacao, controle) {
     } else {
         peca.value = parseInt(peca.value) + 1
     }
-    
+
 }
 
-function atualizaEstatisticas(peca){
+function atualizaEstatisticas(peca) {
     // console.log(pecas[peca] ) //trás os valores do objeto, dados especificos do objeto (braços, pernas...) 
 
     estatisticas.forEach((elemento) => {
@@ -68,3 +68,14 @@ function atualizaEstatisticas(peca){
         //elemento é o valor de texto do html, pecas[peca] é o array na peça especifica que será aumentada, [elemento.dataset.estatistica] 
     })
 }
+
+const colors = document.querySelectorAll("[data-colors]")
+
+function changeColor(cor) {
+
+    for (let i = 0; i < colors.length; i++) {
+        document.querySelector(".robo").src = "img/Robotron 2000 - " + cor + ".png";
+    }
+
+}
+
