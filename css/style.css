@@ -283,7 +283,9 @@ h1 {
         height: 115%;
     }
 
-    .controle {}
+    .controle-contator {
+        padding: 5vh;
+    }
 
     .linha {
         display: none;
@@ -377,7 +379,7 @@ h1 {
     }
 
     .controle-contador {
-        padding: 5;
+        padding: 8;
     }
 
     .controle {
