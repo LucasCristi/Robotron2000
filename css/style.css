@@ -36,7 +36,7 @@ h1 {
 
 .colors {
     position: relative;
-    margin-top: 80vh;
+    margin-top: 79vh;
 }
 
 .robotron {
@@ -372,16 +372,12 @@ h1 {
         height: 115%;
     }
 
-    .controle {}
 
     .linha {
         display: none;
     }
 
-    .controle-contador {
-        padding: 8;
-    }
-
+    
     .controle {
         border-radius: 25px;
         float: none;
