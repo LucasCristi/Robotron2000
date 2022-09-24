@@ -341,7 +341,8 @@ h1 {
         line-height: 0.8;
         font-size: 30px;
         margin-top: 30px;
-        color: rgba(27, 53, 61, 0.8)
+        color: rgba(39, 46, 48, 0.8);
+        text-shadow: 1px 1px 1px rgb(194, 188, 188);
     }
 
     .titulo {
@@ -360,7 +361,8 @@ h1 {
         line-height: 0.8;
         writing-mode: vertical-rl;
         text-orientation: mixed;
-        color: rgba(27, 53, 61, 0.8)
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 1px 1px 1px #000;
     }
 
     .robotron {
@@ -392,19 +394,18 @@ h1 {
         display: none;
     }
 
-    
     .controle {
         border-radius: 25px;
         float: none;
         display: inline-flex;
-        padding: 6px;
+        padding: 0px;
         align-items: center;
         align-self: flex-end;
     }
 
     .controle-contador{
         width: 60px;
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     .montador-conteudo {
