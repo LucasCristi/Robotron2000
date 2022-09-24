@@ -39,7 +39,7 @@ const pecas = {
 controle.forEach((element) => { //forEach é usado para selecionar o array do CONTROLE
     element.addEventListener("click", (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode) //dataset.controle seleciona todos + e -, parentNode seleciona elemento PAI = class controle no HTML
-        atualizaEstatisticas(evento.target.dataset.peca)
+        atualizaEstatisticas(evento.target.dataset.peca, evento.target.dataset.controle)
     })                            //dataset usado para não depender de alterações em classes ou conteúdos no html
 })
 
@@ -56,7 +56,7 @@ function manipulaDados(operacao, controle) {
 
 }
 
-function atualizaEstatisticas(peca) {
+function atualizaEstatisticas(peca, controle) {
     // console.log(pecas[peca] ) //trás os valores do objeto, dados especificos do objeto (braços, pernas...) 
 
     estatisticas.forEach((elemento) => {
@@ -64,7 +64,12 @@ function atualizaEstatisticas(peca) {
         // console.log(elemento.textContent) //numero que será atualizado
         // console.log(elemento) é a linha em que se encontra data-estatistica no html 
 
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+        
+        if (controle === "-") {
+            elemento.textContent = parseInt(elemento.textContent) - pecas[peca][elemento.dataset.estatistica]
+        } else {
+            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+        }
         //elemento é o valor de texto do html, pecas[peca] é o array na peça especifica que será aumentada, [elemento.dataset.estatistica] 
     })
 }
