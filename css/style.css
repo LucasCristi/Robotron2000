@@ -255,7 +255,7 @@ h1 {
     }
 
     main {
-        margin: 0;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -287,9 +287,6 @@ h1 {
         height: 115%;
     }
 
-    .controle-contator {
-        padding: 5vh;
-    }
 
     .linha {
         display: none;
@@ -301,14 +298,6 @@ h1 {
         display: inline-flex;
         align-items: center;
         align-self: flex-end;
-    }
-
-    .montador-conteudo {
-        align-items: center;
-    }
-
-    .equipamentos {
-        align-items: center;
     }
 
     .colors {
@@ -328,10 +317,9 @@ h1 {
     }
 
     main {
-        margin: 0;
+        margin: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
@@ -389,37 +377,32 @@ h1 {
         height: 115%;
     }
 
+    .box{
+        border-left: none;
+    }
 
     .linha {
         display: none;
+    }
+
+    .montador{
+        width: 100%;
     }
 
     .controle {
         border-radius: 25px;
         float: none;
         display: inline-flex;
-        padding: 2px;
+        padding: 0;
+        height: 100%;
         align-items: center;
         align-self: flex-end;
     }
 
     .controle-contador{
         height: 1em;
-        width: 1.5em;
         padding-top: 0px;
         font-size: 2em;
-    }
-
-    .montador-conteudo {
-        align-items: center;
-    }
-
-    .equipamentos {
-        align-items: center;
-    }
-
-    input {
-        width: 100%;
     }
 
     .colors {
