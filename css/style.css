@@ -413,5 +413,12 @@ h1 {
         word-spacing: 5px;
     }
 
+}
+
+@media screen and (max-width: 1000px){
+
+    .peca-titulo{
+        font-size: 1.5em; 
+    }
 
 }
