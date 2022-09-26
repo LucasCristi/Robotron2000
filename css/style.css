@@ -421,6 +421,10 @@ h1 {
         font-size: 4.2em; 
     }
 
+    .titulo{
+        display: none;
+    }
+
     .controle-contador{
         font-size: 1.5em;
         padding: 5px;
