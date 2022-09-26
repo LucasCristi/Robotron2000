@@ -156,6 +156,7 @@ h1 {
     background: var(--main-branco);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
+    z-index: 1;
 }
 
 .producao:hover {
@@ -369,8 +370,9 @@ h1 {
 
   
     .estatistica {
-        width: 20vh;
+        width: 25vh;
         font-size: 12px;
+
     }
 
     .montador {
@@ -400,7 +402,7 @@ h1 {
     }
 
     .controle-contador{
-        height: 1em;
+        height: 2.2em;
         padding-top: 0px;
         font-size: 2em;
     }
